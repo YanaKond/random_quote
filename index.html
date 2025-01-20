@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Случайные цитаты</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app" class="app">
+        <div class="quote">{{ currentQuote.text }}</div>
+        <div class="author">- {{ currentQuote.author }}</div>
+        <button @click="getRandomQuote">Показать другую цитату</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
